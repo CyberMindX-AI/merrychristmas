@@ -334,7 +334,7 @@ function App() {
               <img src={bearsImg} alt="Bears" className="wreath-img" />
             </motion.div>
             <div style={{ textAlign: 'center' }}>
-              <h1 className="title-cursive">Maze Solved!</h1>
+              <h1 className="title-cursive">Oluwadarasimi Found Zenith</h1>
               <p className="sub-text" style={{ margin: '1rem 0' }}>
                 You are amazing! ❤️
               </p>
