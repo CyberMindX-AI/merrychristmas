@@ -1,0 +1,108 @@
+/* Maze Container */
+.maze-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 95vw;
+}
+
+/* Header */
+.maze-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Grid */
+.maze-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #ffcdd2;
+    /* Pinkish border/bg */
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.maze-row {
+    display: flex;
+    gap: 2px;
+}
+
+.maze-cell {
+    width: 25px;
+    height: 25px;
+    background-color: #e0f7fa;
+    /* Light blue path */
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maze-cell.wall {
+    background-color: #0288d1;
+    /* Darker blue wall */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.maze-cell.goal {
+    background-color: #ffebee;
+}
+
+/* Player & Goal */
+.player-marker {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.goal-marker {
+    font-size: 1rem;
+}
+
+/* Controls */
+.controls {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.control-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.ctrl-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-secondary);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: active 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctrl-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+    .maze-cell {
+        width: 30px;
+        height: 30px;
+    }
+}
